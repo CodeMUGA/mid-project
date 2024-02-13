@@ -1,0 +1,57 @@
+* {
+font-family: roboto, sans-serif;    
+
+}
+:root{
+    --primary-default: #072AC8;
+    --accent: #43D2FF;
+    --primary-hover:#A2D6F9;
+    --primary-tapped:#D1EDFF;
+
+    --neutral-dark:#292E47;
+    --neutral-medium:#6B708D;
+    --neutral-light: #F2F4FC;
+    --neutral-light-blue:#ECF7FF;
+
+    --secundary-1:#FFC600;
+}
+
+button{
+    background-color: var(--primary-default);
+    color:#fff;
+    border:none;
+}
+
+h1{ 
+    font-size: 60px;
+    font-weight: bold;
+} h2{
+    font-size: 50px bold;
+    font-weight: bold;
+} h3{
+    font-size: 40px bold;
+    font-weight: bold;
+} h4{
+    font-size: 24px bold;
+    font-weight: bold;
+}
+
+.nav-1 li{
+    list-style:none;
+}
+
+
+
+.hero-img {
+    max-width: 600px;
+    width: 600px;
+    position: relative;
+} 
+.card-1 img{
+    position: absolute;
+} 
+.card-2{
+    position: absolute;
+}
+
+
