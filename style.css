@@ -1,6 +1,7 @@
 * {
 font-family: roboto, sans-serif;    
 
+
 }
 :root{
     --primary-default: #072AC8;
@@ -36,22 +37,65 @@ h1{
     font-weight: bold;
 }
 
+.nav-1{
+    margin: 0 100px ;
+}
+
 .nav-1 li{
     list-style:none;
+    justify-content: center;
+
 }
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+}
+.menu__container{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+
+
+
 
 
 
 .hero-img {
     max-width: 600px;
     width: 600px;
-    position: relative;
+    position: absolute;
 } 
 .card-1 img{
     position: absolute;
+    top: 1rem;
+    left: 0;
 } 
 .card-2{
     position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 
+/* emoji section */
+
+.container_clients {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "emoji_1 client_text emoji_2"
+      "emoji_1 client_text emoji_2"
+      "emoji_1 client_text emoji_2";
+  }
+  
+  .emoji_1 { grid-area: emoji_1; }
+  
+  .emoji_2 { grid-area: emoji_2; }
+  
+  .client_text { grid-area: client_text; }
+  
