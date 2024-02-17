@@ -17,6 +17,10 @@ font-family: roboto, sans-serif;
     --secundary-1:#FFC600;
 }
 
+.containter__flex{
+    display: flex;
+}
+
 button{
     background-color: var(--primary-default);
     color:#fff;
@@ -59,7 +63,11 @@ h1{
 
 
 
-
+.hero__section{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 
 
 .hero-img {
@@ -67,12 +75,16 @@ h1{
     width: 600px;
     position: absolute;
 } 
-.card-1 img{
+.card-1{
+    display: flex;
+    flex-direction: row;
     position: absolute;
-    top: 1rem;
+    top: 0;
     left: 0;
 } 
 .card-2{
+    display: flex;
+    flex-direction: row;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -80,7 +92,7 @@ h1{
 
 
 /* emoji section */
-
+/* 
 .container_clients {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -97,5 +109,5 @@ h1{
   
   .emoji_2 { grid-area: emoji_2; }
   
-  .client_text { grid-area: client_text; }
+  .client_text { grid-area: client_text; } */
   
