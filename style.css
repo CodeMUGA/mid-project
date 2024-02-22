@@ -1,5 +1,6 @@
 * {
-font-family: roboto, sans-serif;    
+font-family: roboto, sans-serif;   
+background: var(--bg__color);
 
 
 }
@@ -15,10 +16,11 @@ font-family: roboto, sans-serif;
     --neutral-light-blue:#ECF7FF;
 
     --secundary-1:#FFC600;
-}
 
-.containter__flex{
-    display: flex;
+    --bg__color: #f4f6fc;
+}
+#cointainer__flex{
+    /* margin: 0 10em 0 10em; */
 }
 
 button{
@@ -40,6 +42,39 @@ h1{
     font-size: 24px bold;
     font-weight: bold;
 }
+
+.BodyIntro_txt-med{
+    font-size: 24px;
+    font-weight:medium;
+
+}
+
+.BodyIntro_txt-reg{
+    font-size: 20px;
+    font-weight: regular;
+
+}
+
+.HTxt_reg{
+    font-size: 17px;
+    font-weight: regular;
+}
+
+.HTxt_med{
+    font-size: 17px;
+    font-weight: medium;
+}
+
+.Caption-1{
+    font-size: 15px;
+    font-weight: regular;
+}
+
+.Caption-2{
+    font-size: 13px;
+    font-weight: regular;
+}
+
 
 .nav-1{
     margin: 0 100px ;
@@ -98,3 +133,59 @@ h1{
     justify-content: space-around;
     
 }
+
+/* Recent projects*/
+
+.projects__container{
+    margin-left: 170px;
+    margin-top: 12em;
+
+
+}
+
+/* .projects__container-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+
+
+} */
+
+
+/* .project__card-container{  
+    background-color:#FFF;
+    display: inline-block;
+
+
+} */
+
+
+.project__card{
+    width: 340px;
+}
+
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "card-img card-img-1 card-img-2"
+      "card-txt card-txt-1 card-txt-2";
+
+  }
+  
+  .card-img { grid-area: card-img; }
+  
+  .card-img-1 { grid-area: card-img-1; }
+  
+  .card-img-2 { grid-area: card-img-2; }
+  
+  .card-txt { grid-area: card-txt; }
+  
+  .card-txt-1 { grid-area: card-txt-1; }
+  
+  .card-txt-2 { grid-area: card-txt-2; }
+  
