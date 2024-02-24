@@ -45,7 +45,7 @@ h1{
 
 .BodyIntro_txt-med{
     font-size: 24px;
-    font-weight:medium;
+    font-weight:600;
 
 }
 
@@ -131,7 +131,8 @@ h1{
     gap: 10px;
     flex-direction: row;
     justify-content: space-around;
-    
+    padding-left: 170px;
+    margin-top: 10em;
 }
 
 /* Recent projects*/
@@ -189,3 +190,71 @@ h1{
   
   .card-txt-2 { grid-area: card-txt-2; }
   
+
+  /* Testimonials */
+
+.testimonial__container{
+    display: flex;
+    max-width: 1320px;
+    max-height: 622px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-clip: content-box;
+} 
+.memojis__container-left{background-color: #292e47;}
+.memojis__container-right{background-color: #292e47;}
+
+
+
+.memoji-1,
+.memoji-2,
+.memoji-3,
+.memoji-4
+{
+    max-width: 150px;
+
+    background-color: #292e47;
+}
+
+
+.memojis__container-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+}
+
+.memojis__container-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+}
+
+.memojis__container-mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 10px; */
+    /* padding: 20px; */
+    background-clip: content-box;
+    background-color: #292e47;
+}
+
+.text__bg{
+    background-color: #292e47;
+}
+
+.testimonial__container h3, p{
+    background: transparent;
+}
+
+.testimonial__container h3{
+    color: #fff;
+}
+.testimonial__container p{
+    color:var(--secundary-1);
+}
