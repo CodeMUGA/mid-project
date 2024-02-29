@@ -316,16 +316,24 @@ h1{
   }
 
 
-  .cta__container{
-    
+  .cta__container{ 
+
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    
+    /* display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    align-content: center; 
 
     overflow: auto;
-    flex-direction: row;
+    flex-direction: row;*/
 
     width: 1100px;
     height: 227px;
@@ -334,6 +342,34 @@ h1{
 
     background-color: var(--secundary-1);
 }
-.cta__container div, form, h3, p{
+.cta__container div, form, h3, p, label{
     background: transparent;
 }
+
+.cta__container label{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 1vh 5vh 1vh 1vh;
+}
+.cta__container button{
+/* display: flex;
+flex-direction: row; */
+}
+
+button{
+    background-color: var(--primary-default);
+    color:#fff;
+    border:none;
+    padding: 1vh;
+    margin: 1vh 0 1vh 0;
+    border-radius: ;
+}
+
+.form__section{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
